@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <h1 class="heading">Message Board</h1>
+    <a href="./new"><button>Post a message</button></a>
+    <div class="board">
+    <% for(let i=0; i<messages.length; i++) { %>
+        <h2 class="message"><%= messages[i].user %> <br> <br> <%= messages[i].text %> <br> <br> <%= "at " + messages[i].added%> </h2>
+    <% } %>
+    </div>
+  </body>
+</html>

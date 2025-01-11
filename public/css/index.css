@@ -1,0 +1,42 @@
+body {
+  background: grey;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: darkblue;
+  text-align: center;
+  font-size: 30px;
+}
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+.message {
+  color: white;
+  background-color: darkblue;
+  min-height: 300px;
+  width: 300px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border: 5px solid green;
+  border-radius: 20px;
+}
+button {
+  color: white;
+  background-color: darkblue;
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+}

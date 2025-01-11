@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+    <link rel="stylesheet" href="/css/form.css" />
+  </head>
+  <body>
+    <form method="POST" action="/new">
+      <h1>Enter a new message:</h1>
+      <label for="name">Enter your name: </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="John Doe"
+        required
+      />
+      <label for="messageText">Enter your message: </label>
+      <textarea
+        name="messageText"
+        id="messageText"
+        placeholder="Hello there!"
+        required
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
