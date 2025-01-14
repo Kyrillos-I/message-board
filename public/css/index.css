@@ -40,3 +40,8 @@ button {
   border-radius: 10px;
   font-size: 20px;
 }
+h2 {
+  color: darkblue;
+  margin-bottom: 20px;
+  margin-top: none;
+}
